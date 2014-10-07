@@ -13,10 +13,12 @@ To use `hiera_param`, the following configuration is required:
 - Class keys in the appropriate data sources. In a data source keyed to a node's role,
   one might have:
 
-  ---
-  params:
-    dc: 'NYC'
-    cluster: 'web'
+```yaml
+---
+params:
+  dc: 'NYC'
+  cluster: 'web'
+````
 
 In addition to the required `key` argument, `hiera_param` accepts two additional
 arguments:
